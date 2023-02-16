@@ -1,0 +1,55 @@
+.asktug-categories-list-container {
+  display: none;
+  overflow: hidden;
+  margin: 0 0 24px;
+}
+
+html.display-asktug-categories-list .asktug-categories-list-container {
+  display: block;
+  position: relative;
+}
+
+.asktug-categories-list {
+  .asktug-categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: -12px 0 0 -12px;
+
+    &-item {
+      margin: 12px 0 0 12px;
+      display: inline-flex;
+      flex-direction: column;
+      border: 1px solid var(--asktug-category-color);
+      border-radius: 6px;
+      background-color: var(--asktug-category-bg-color);
+      padding: 8px 12px;
+      min-width: max-content;
+
+      &:not(:first-child) {
+      }
+
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+
+        &-week-topics {
+          margin-left: 24px;
+          color: #bfbfbf;
+
+          .numb {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "author": "634750802",
+  "license": "MIT",
+  "scripts": {
+    "dev": "discourse_theme watch ."
+  },
+  "devDependencies": {
+    "@types/ember": "^4.0.3",
+    "eslint-config-discourse": "latest"
+  }
+}

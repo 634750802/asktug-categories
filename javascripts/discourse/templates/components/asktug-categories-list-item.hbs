@@ -1,0 +1,13 @@
+<a onclick={{action "performRoute"}} href={{href}}>
+  <div class="asktug-categories-list-item-title">
+    <span>
+      {{#if category.read_restricted}}
+        {{d-icon "asktug-locked"}}
+      {{/if}}
+      {{category.name}}
+    </span>
+    <span class="asktug-categories-list-item-title-week-topics">
+      <span class="numb">{{category.topics_week}}/</span>周
+    </span>
+  </div>
+</a>
